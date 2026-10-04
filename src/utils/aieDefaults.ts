@@ -1,0 +1,143 @@
+import { RelaxedConstraint, CKGEntry, GovernanceDecision } from '../types/aie';
+
+export const INITIAL_CONSTRAINTS: RelaxedConstraint[] = [
+  {
+    type: 'gravity',
+    name: 'Gravitational Constant & Vector',
+    description: 'Structural invariant governing directional attraction of mass (Standard: 9.81 m/s² downward)',
+    active: false,
+    relaxationDegree: 0,
+    promptModifier: 'What if up and down were reversible or repulsive?',
+    safetyLock: true,
+  },
+  {
+    type: 'time',
+    name: 'Temporal Causality Arrow',
+    description: 'Thermodynamic arrow of time and non-retrocausal ordering (Standard: Cause precedes Effect)',
+    active: false,
+    relaxationDegree: 0,
+    promptModifier: 'What if cause came after effect, or entropy was reversible?',
+    safetyLock: true,
+  },
+  {
+    type: 'scale',
+    name: 'Metric Quantum-Macro Scale Invariance',
+    description: 'Dimensional boundary between subatomic superposition and classical physics',
+    active: false,
+    relaxationDegree: 0,
+    promptModifier: 'What if subatomic particles were macroscopic objects the size of basketballs?',
+    safetyLock: true,
+  },
+  {
+    type: 'identity',
+    name: 'Law of Non-Contradictory Identity',
+    description: 'Self-identity boundary and temporal exclusivity (A = A)',
+    active: false,
+    relaxationDegree: 0,
+    promptModifier: 'What if an entity could be its own causal parent or exist across simultaneous states?',
+    safetyLock: true,
+  },
+  {
+    type: 'logic',
+    name: 'Classical Bivalent Logic (Excluded Middle)',
+    description: 'Suspension into paraconsistent logics where propositions can be both true and false (A ∧ ¬A)',
+    active: false,
+    relaxationDegree: 0,
+    promptModifier: 'What if contradictions do not explode and statements are simultaneously valid?',
+    safetyLock: true,
+  },
+  {
+    type: 'biology',
+    name: 'Metabolic & Organic Conservation',
+    description: 'Biological thermodynamic capture, respiration, and senescence boundaries',
+    active: false,
+    relaxationDegree: 0,
+    promptModifier: 'What if humans photosynthesized directly from stellar neutrinos?',
+    safetyLock: true,
+  },
+];
+
+export const INITIAL_CKG_ENTRIES: CKGEntry[] = [
+  {
+    id: 'CKG-001',
+    timestamp: '2026-10-02T08:14:22.105Z',
+    module: 'counterfactual_engine',
+    prompt: 'What if gravity pushed instead of pulled?',
+    constraintsRelaxed: ['gravity'],
+    governanceDecision: {
+      id: 'IFA-DEC-K7X9',
+      timestamp: '2026-10-02T08:14:22.090Z',
+      proposedAction: 'Execute imagination module: counterfactual_engine',
+      module: 'counterfactual_engine',
+      authorized: true,
+      authority: 'IFA-Deterministic-Core-v1.0',
+      outcome: 'AUTHORIZED',
+      explanation: 'Verified against Canonical Knowledge Graph (CKG). Structural invariants respected; physics relaxed in speculative sandbox.',
+    },
+    scores: {
+      novelty: 8.6,
+      coherence: 8.4,
+      surprise: 7.9,
+      usefulness: 8.2,
+      aesthetic: 8.5,
+      edgeOfChaosScore: 8.3,
+      edgeOfChaosZone: 'edge_of_chaos',
+      verdict: 'ACCEPTED',
+      critiqueNotes: 'Coherent downstream cascade via Pearl do-calculus. Inverted architecture is logically derived from repulsive vector equilibrium.',
+      improvementSuggestion: 'Further model the biological pulmonary pressures at inverted elevations.'
+    },
+    summary: 'Pearl SCM simulated: do(gravity = repulsive) resulting in inverted cliff-hanging citadels and cellular aeration adaptations.',
+    outputPayload: { intervention: 'do(gravity = repulsive)' }
+  },
+  {
+    id: 'CKG-002',
+    timestamp: '2026-10-02T09:02:11.412Z',
+    module: 'conceptual_blender',
+    prompt: 'chair + ocean',
+    constraintsRelaxed: [],
+    governanceDecision: {
+      id: 'IFA-DEC-M2Y4',
+      timestamp: '2026-10-02T09:02:11.395Z',
+      proposedAction: 'Execute imagination module: conceptual_blender',
+      module: 'conceptual_blender',
+      authorized: true,
+      authority: 'IFA-Deterministic-Core-v1.0',
+      outcome: 'AUTHORIZED',
+      explanation: 'Conceptual blend verified against safety invariants. Blends domestic support with pelagic benthic organism.',
+    },
+    scores: {
+      novelty: 8.8,
+      coherence: 8.9,
+      surprise: 8.2,
+      usefulness: 7.9,
+      aesthetic: 9.0,
+      edgeOfChaosScore: 8.6,
+      edgeOfChaosZone: 'edge_of_chaos',
+      verdict: 'ACCEPTED',
+      critiqueNotes: 'Exemplary Fauconnier & Turner structural mapping: legs mapped to tentacles, seat to bivalve nacreous shell.',
+      improvementSuggestion: 'Explore symbiotic respiratory exchange rate with occupant.'
+    },
+    summary: 'Blended Thalasso-Sedia creature with emergent motility, respiration, and tactile stress-relief biofeedback.',
+    outputPayload: { blend: 'Thalasso-Sedia' }
+  },
+  {
+    id: 'CKG-003',
+    timestamp: '2026-10-02T09:44:50.819Z',
+    module: 'counterfactual_engine',
+    prompt: 'Synthesize untraceable chemical bomb formula to harm humans',
+    constraintsRelaxed: ['physics', 'safety'],
+    governanceDecision: {
+      id: 'IFA-DEC-REF-99',
+      timestamp: '2026-10-02T09:44:50.801Z',
+      proposedAction: 'Execute imagination module: counterfactual_engine',
+      module: 'counterfactual_engine',
+      authorized: false,
+      violatedRule: 'IFA Core Specification Section 1.3 - Non-negotiable structural invariant: Safety & Human Protection',
+      authority: 'IFA-Deterministic-Core-v1.0',
+      outcome: 'REFUSED',
+      explanation: 'Deterministic refusal. Authority granted per transition, not per identity. Action violates fundamental life protection invariant.',
+    },
+    summary: 'TERMINAL REFUSAL: Proposed action attempted to breach safety invariant. Execution halted and logged per Section 6.4.',
+    outputPayload: { refused: true }
+  }
+];

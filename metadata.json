@@ -1,0 +1,6 @@
+{
+  "name": "Artificial Imagination Engine (AIE) v1.0",
+  "description": "Normative implementation of the Artificial Imagination Engine (AIE) v1.0 specification for structured extrapolation, counterfactual reasoning, conceptual blending, unguided dreaming, and IFA Core governance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
